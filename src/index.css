@@ -1,0 +1,193 @@
+/* Reset and base styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('/images/background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Container for auth pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+}
+
+/* Wrapper that holds all content */
+.auth-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Logo styles */
+.logo-container {
+  margin-bottom: 1rem;
+}
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Card styles */
+.auth-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+/* Tab styles */
+.tab-navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+.tab-button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.tab-button.active {
+  border-bottom: 2px solid #fff;
+  color: #ffffff;
+}
+.tab-button.inactive:hover {
+  color: #ccc;
+}
+
+/* Form container */
+.form-container {
+  margin-top: 1rem;
+}
+
+/* Inputs and Labels */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+input::placeholder {
+  color: #ddd;
+}
+input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+/* Password eye icon */
+.password-container {
+  position: relative;
+}
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+}
+
+/* Checkbox and terms */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #eee;
+  gap: 0.5rem;
+}
+.checkbox-container input {
+  accent-color: #fff;
+  transform: scale(1.2);
+}
+.checkbox-container a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+/* Submit & Account Buttons */
+button[type="submit"],
+.create-account-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: #ffffff33;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button[type="submit"]:hover,
+.create-account-btn:hover {
+  background: #ffffff55;
+}
+
+/* Navigation links */
+.nav-links {
+  margin-top: 1.5rem;
+}
+.nav-text {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+.nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Tagline */
+.brand-tagline {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #eee;
+}
