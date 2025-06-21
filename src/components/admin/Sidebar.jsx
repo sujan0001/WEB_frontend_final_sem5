@@ -1,12 +1,16 @@
+import { NavLink } from "react-router-dom";
+import "../../styles/dashboard.css"
 
-AdminLayout.jsx
-import Sidebar from "./Sidebar";
-
-export default function AdminLayout({ children }) {
+export default function Sidebar() {
   return (
-    <div className="bg-black min-h-screen text-white">
-      <Sidebar />
-      <main className="ml-72 p-8">{children}</main>
-    </div>
+    <aside className="sidebar">
+      <div className="sidebar-header">ROLO Admin</div>
+      <nav className="sidebar-nav">
+        <NavLink to="/admin/users" className="sidebar-link">Users</NavLink>
+        <NavLink to="/admin/categories" className="sidebar-link">Categories</NavLink>
+        <NavLink to="/admin/products" className="sidebar-link">Products</NavLink>
+        <NavLink to="/admin/orders" className="sidebar-link">Orders</NavLink>
+      </nav>
+    </aside>
   );
 }
